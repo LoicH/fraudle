@@ -1,0 +1,18 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+Fraudle
+{% endblock %}
+
+
+{% block content %}
+
+{{ wtf.quick_form(form) }}
+
+{{ message }}
+
+{{ guesses }}
+
+{{ display }}
+{% endblock %}
